@@ -2327,6 +2327,27 @@
         "cognitiveServiceSubscriptionKey"
       ]
     },
+    "Omnichannel": {
+      "type": "object",
+      "x-ms-discriminator-value": "Omnichannel",
+      "description": "Omnichannel channel definition",
+      "allOf": [
+        {
+          "$ref": "#/definitions/Channel"
+        }
+      ],
+      "properties": {
+        "properties": {
+          "$ref": "#/definitions/OmnichannelChannelProperties",
+          "description": "The set of properties specific to Omnichannel channel resource"
+        }
+      }
+    },
+    "OmnichannelChannelProperties": {
+      "properties": {
+      },
+      "description": "The parameters to provide for the Omnichannel channel."
+    }
     "ChannelResponseList": {
       "properties": {
         "nextLink": {
@@ -2937,7 +2958,8 @@
         "DirectLineChannel",
         "SmsChannel",
         "LineChannel",
-        "DirectLineSpeechChannel"
+        "DirectLineSpeechChannel",
+        "Omnichannel"
       ],
       "x-ms-enum": {
         "name": "channelName",
@@ -2981,6 +3003,9 @@
           },
           {
             "value": "DirectLineSpeechChannel"
+          },
+          {
+            "value": "Omnichannel"
           }
         ]
       },

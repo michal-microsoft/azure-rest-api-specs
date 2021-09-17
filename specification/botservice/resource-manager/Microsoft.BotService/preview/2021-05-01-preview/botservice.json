@@ -2327,7 +2327,7 @@
         "cognitiveServiceSubscriptionKey"
       ]
     },
-    "Omnichannel": {
+    "OmnichannelChannel": {
       "type": "object",
       "x-ms-discriminator-value": "Omnichannel",
       "description": "Omnichannel channel definition",

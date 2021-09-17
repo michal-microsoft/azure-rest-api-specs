@@ -2335,18 +2335,7 @@
         {
           "$ref": "#/definitions/Channel"
         }
-      ],
-      "properties": {
-        "properties": {
-          "$ref": "#/definitions/OmnichannelChannelProperties",
-          "description": "The set of properties specific to Omnichannel channel resource"
-        }
-      }
-    },
-    "OmnichannelChannelProperties": {
-      "properties": {
-      },
-      "description": "The parameters to provide for the Omnichannel channel."
+      ]
     },
     "ChannelResponseList": {
       "properties": {

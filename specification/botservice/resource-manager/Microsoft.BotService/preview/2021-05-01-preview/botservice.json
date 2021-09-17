@@ -2347,7 +2347,7 @@
       "properties": {
       },
       "description": "The parameters to provide for the Omnichannel channel."
-    }
+    },
     "ChannelResponseList": {
       "properties": {
         "nextLink": {
